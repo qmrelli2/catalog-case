@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f6f7;
+}
+
+a,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  margin: 0;
+  text-decoration: none;
+  color: #353535;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
