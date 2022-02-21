@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  background: white;
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  padding: 2rem;
+
+  .social-links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    i {
+      font-size: 1.6rem;
+      margin-right: 1rem;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div class="row justify-content-center">
+  <div class="col-10">
+    <div class="product-card">
+      <img [src]="imageUrl" alt="" />
+
+      <div class="content">
+        <h2>{{ productDetail.name }}</h2>
+        <p>{{ categoryNameConverter(productDetail.category) }}</p>
+        <p>{{ productDetail.description }}</p>
+      </div>
+      <div class="bottom">
+        <div class="price">{{ productDetail.price }}₺</div>
+
+        <button propagation (click)="addToFavorite()">
+          <i *ngIf="!productDetail.isFavorite" class="ri-heart-line"></i>
+          <i *ngIf="productDetail.isFavorite" class="ri-heart-fill"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

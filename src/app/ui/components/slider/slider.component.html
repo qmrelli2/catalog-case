@@ -1,0 +1,14 @@
+<swiper
+  [slidesPerView]="slidesPerView"
+  [spaceBetween]="spaceBetween"
+  [pagination]="imgList.length > 1 ? true : false"
+  (swiper)="onSwiper($event)"
+  [loop]="loop"
+  [autoplay]="autoplay"
+  [class.pagination]="imgList.length > 1 ? true : false"
+  (slideChange)="onSlideChange()"
+>
+  <ng-template *ngFor="let img of imgList" swiperSlide
+    ><img [src]="img"
+  /></ng-template>
+</swiper>

@@ -1,20 +1,22 @@
 <div class="container">
   <div class="row align-items-center">
     <div class="col-3">
-      <h1 class="site-title">Catalog App</h1>
+      <h1 class="site-title" [routerLink]="''">Katalog App</h1>
     </div>
     <div class="col-6">
       <ul class="site-menu">
-        <li class="site-menu-item">
-          <a [routerLink]="'home'">Anasayfa</a>
+        <!-- <li class="site-menu-item">
+          <a [routerLink]="''" routerLinkActive="active-link">Anasayfa</a>
         </li>
         <li class="site-menu-item">
-          <a [routerLink]="'products'">Ürünler</a>
-        </li>
+          <a [routerLink]="'products'" routerLinkActive="active-link"
+            >Ürünler</a
+          >
+        </li> -->
       </ul>
     </div>
     <div class="col-3">
-      <button class="favorite-btn">
+      <button class="favorite-btn" [routerLink]="'favorite'">
         <i class="ri-heart-line"></i>
         <span>Favoriler</span>
       </button>

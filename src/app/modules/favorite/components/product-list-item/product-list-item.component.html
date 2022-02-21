@@ -1,0 +1,15 @@
+<img [src]="imageUrl" alt="" />
+
+<div class="content">
+  <h5>{{ product.name }}</h5>
+  <p>{{ categoryNameConverter(product.category) }}</p>
+</div>
+
+<div class="bottom">
+  <div class="price">{{ product.price }}₺</div>
+
+  <button>
+    <i *ngIf="!product.isFavorite" class="ri-heart-line"></i>
+    <i *ngIf="product.isFavorite" class="ri-heart-fill"></i>
+  </button>
+</div>

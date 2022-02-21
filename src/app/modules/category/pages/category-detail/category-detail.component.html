@@ -1,0 +1,8 @@
+<h2 *ngIf="categoryDetail" class="category-title">
+  {{ categoryDetail.name }}
+</h2>
+
+<category-product-list
+  *ngIf="categoryDetail"
+  [category]="categoryDetail"
+></category-product-list>

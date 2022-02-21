@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { MainLayoutComponent } from './pages';
 
 // Components
-import { MainNavbarComponent } from './components';
+import { MainFooterComponent, MainNavbarComponent } from './components';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
@@ -17,6 +17,7 @@ import { MainNavbarComponent } from './components';
 
     // Components
     MainNavbarComponent,
+    MainFooterComponent,
   ],
   providers: [],
 })
