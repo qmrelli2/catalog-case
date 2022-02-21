@@ -11,10 +11,8 @@ import { SliderService } from '../../services/slider.service';
 })
 export class HomeSliderComponent implements OnInit {
   sliderItems: ISlider[];
-  imgList: string[];
   constructor(private sliderService: SliderService) {
     this.sliderItems = [];
-    this.imgList = [];
   }
 
   ngOnInit() {
@@ -25,11 +23,6 @@ export class HomeSliderComponent implements OnInit {
     let apiCall: IApiCall = {};
     this.sliderService.fetchSliders(apiCall).subscribe((res) => {
       this.sliderItems = res;
-
-      this.sliderItems.forEach((slider) => {
-        let url: string = environment.apiUrl + slider.image;
-        this.imgList.push(url);
-      });
     });
   }
 }

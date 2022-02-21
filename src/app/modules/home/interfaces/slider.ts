@@ -1,4 +1,4 @@
 export interface ISlider {
-  product_id: number;
+  productId: number;
   image: string;
 }
